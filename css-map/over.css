@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #080b16;
+    color: white;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+header {
+    background-color: #080b16;
+    border-bottom: 1px solid #333;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+
+    height: 80px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #6c63ff;
+    color: white;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    color: #cccccc;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    color: rgba(0, 157, 255, 0.922);
+}
+
+
+.about {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-me {
+    flex: 1;
+    padding: 30px;
+    background-color: #121729;
+    border-radius: 15px;
+}
+
+.about h1 {
+    color: #8b7cff;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #bbbbbb;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.plaatje {
+    flex: 1;
+    min-width: 0;
+}
+
+.plaatje img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+
+.hobbysmain {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hobbysmain h2 {
+    color: #8b7cff;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hobbysmain p {
+    color: #bbbbbb;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.hobbys {
+    flex: 1;
+    padding: 30px;
+    background-color: #121729;
+    border-radius: 15px;
+}
+
+#little-afbeeldingHB,
+#little-afbeeldingSP {
+    flex: 1;
+    min-width: 0;
+}
+
+.little-afbeeldingHB img,
+.little-afbeeldingSP img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+   
+}
+
+
+.KarakterEigenschap {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0 80px;
+   display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.Eigenschap {
+    flex: 1;
+    padding: 30px;
+    background-color: #121729;
+    border-radius: 15px;
+}
+
+.Eigenschap h2 {
+    color: #8b7cff;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.Eigenschap p {
+    color: #bbbbbb;
+    line-height: 1.7;
+}
+
+.KarakterBeelding {
+    flex: 1;
+    min-width: 0;
+}
+
+.KarakterBeelding img {
+    width: 125%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;    
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 25px 5%;
+    background-color: #060811;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #aaaaaa;
+
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #8b7cff;
+}
+
+footer p {
+    color: #888888;
+}
+
+Contact 
+#form {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;      
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h1 {
+    color: #8b7cff;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #bbbbbb;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+.contact-form {
+    position: relative;
+    top: 20px;
+
+    flex: 1;
+    padding: 30px;
+    background-color: #121729;
+    border-radius: 15px;
+}
+
+.contact-form label {
+    display: block;
+    color: #bbbbbb;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #0b0f1d;
+    color: white;
+    border: 1px solid #8b7cff;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px 30px;
+    background-color: #8b7cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #6f5fe6;
+}
+
+
+
+    
+.opleid2 {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+    display: flex;
+    gap: 20px;
+}
+
+#kaart1,
+#kaart2,
+#kaart3 {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    background-color: #121729;
+    color: #bbbbbb;
+    border-radius: 10px;
+}
+    
+#kaart1 img,
+#kaart2 img,
+#kaart3 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+#aanmeld-knop {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#aanmeld-knop:hover {
+    background-color: #218838;
+}
+
+
+@media (max-width: 768px) { 
+    .navbar {
+        width: 95%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .about,
+    .hobbysmain,
+    .KarakterEigenschap,
+    #form,
+    .opleid2 {
+        flex-direction: column;
+    }
+
+    .plaatje,
+    .hobbys,
+    .Eigenschap,
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .KarakterBeelding img {
+        width: 100%;
+    }
+
+    #kaart1,
+    #kaart2,
+    #kaart3 {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
