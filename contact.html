@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="over.css">
+</head>
+
+<body>
+   <header>
+    <nav class="navbar">
+
+        <a href="portfolio.html" class="logo">MC</a>
+
+        <ul class="nav-links">
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="overmij.html">Over mij</a></li>
+            <li><a href="project.html">Projecten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="opleding.html">Opleiding</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+    <main>
+        <section class="contact">
+
+            <div class="contact-info">
+                <h1>Contact</h1>
+                <p>Wil je met mij in contact komen? Stuur me een bericht.</p>
+                <p>E-mail:jouwemail@voorbeeld.nl</p>
+            </div>
+
+            <div id= "form" class="contact-form">
+                <form>
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" name="naam">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="geslacht">Geslacht</label>
+                    <select id="geslacht" name="geslacht">
+                        <option value="man">Man</option>
+                        <option value="vrouw">Vrouw</option>
+                        <option value="anders">Anders</option>
+                        <option value="geen-antwoord">Zeg ik liever niet</option>
+                    </select>
+
+                    <label for="onderwerp">Onderwerp</label>
+                    <select id="onderwerp" name="onderwerp">
+                        <option value="vraag">Vraag</option>
+                        <option value="project">Samenwerken aan een project</option>
+                        <option value="anders">Anders</option>
+                    </select>
+
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" rows="5"></textarea>
+
+                    <button type="submit">Versturen</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="portfolio.html">Home</a>
+            <a href="project.html">Project</a>
+        </div>
+
+        <p>Copyright © 2026 Mirza Canavar</p>
+    </footer>
+</body>
+
+</html>
